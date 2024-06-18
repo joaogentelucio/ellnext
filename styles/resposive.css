@@ -1,0 +1,94 @@
+@media screen and (max-width: 768px) {
+    /* HEADER */
+    header .menu-icon {
+        display: block;
+    }
+    
+    header .menu-div .border-div {
+        display: none;
+    }
+
+    header .navbar {
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #2852A1;
+        z-index: 1;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 200ms ease-in-out;
+    }
+
+    header .navbar a:hover {
+        padding: 0 300px;
+        border-radius: 16px;
+    }
+
+    header .navbar.active {
+        left: 0;
+    }
+
+    /* MAIN */
+    main section {
+        gap: 10vh;
+    }
+
+    main .title-div h2 {
+        font-size: 1.0em;
+    }
+
+    main .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    main .txt-div p {
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    main .box-page2 {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+    main .especialidades-box {
+        width: 225px;
+        height: 166px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .especialidades-box i {
+        font-size: 1.2em;
+    }
+
+    main .especialidades-box h3 {
+        font-size: 0.8em;
+        margin: 5px 0;
+    }
+    
+    main .especialidades-box p {
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    main .portfolio-div {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr ;
+    }
+
+    main .img-port {
+        width: 180px;
+        height: 230px;
+    }
+
+    main .overlay {
+        width: 180px;
+        height: 230px;
+    }
+}

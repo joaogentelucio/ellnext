@@ -1,0 +1,50 @@
+footer {
+    width: 100%;
+    height: 10vh;
+    background: transparent;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    border-top: 1px solid #222;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.wrapper {
+    display: inline-flex;
+    
+}
+
+.wrapper a {
+    color: #444;
+}
+
+.wrapper .icon {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .instagram:hover {
+    background: #e4405f;
+    color: #ffffff;
+}
+
+.wrapper .whatsapp:hover {
+    background: green;
+    color: #ffffff;
+}
+

@@ -1,0 +1,124 @@
+main {
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+    
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20vh;
+}
+
+section img {
+    width: 150px;
+    height: 150px;
+}
+
+.title-div h2 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+    gap: 50px;
+}
+
+.txt-div p {
+    width: 90%;
+    height: 20vh;
+    font-size: 1.2em;
+}
+
+#page1 img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+.box-page2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.especialidades-box {
+    width: 450px;
+    height: 332px;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.especialidades-box i {
+    font-size: 70px;
+    color: #ffffff;
+}
+
+.especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.portfolio-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 460px;
+    background-color: #000000b8;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.img-port:hover .overlay {
+    opacity: 1;
+}
